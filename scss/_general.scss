@@ -1,0 +1,256 @@
+@import"../scss/variable";
+@import"../scss/extend";
+
+/*Reset*/
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    background-color: $negro;
+    margin-top: 5rem;
+}
+h1,h2{
+    color: $blanco;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+}
+a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+li{
+    color: $blanco;
+}
+img{
+    border-radius: 10px;
+}
+
+/*Index menu*/
+.cabezera{
+    background-image: url(../img/Copia-santana.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90px;
+    background-color: $blanco-tra;
+    position: sticky;
+}
+.menu{
+    @include flex-row-center;
+    padding: 0.5rem;
+    margin: 2rem;
+    li{
+        text-decoration: none;
+        font-size: 12px;
+        a{
+            color: $blanco;
+        }
+    }
+}
+#inicio{
+    position: relative;
+    background-size: 170px;
+    padding-top: 70px;
+    background-position-y: 40px  ;
+    background-color: #333333;
+}
+.button-rem{
+    @extend %padding_border;
+    background-color: $rojo-tra;
+    border: #131513 solid 1.5px;
+    color: $blanco;
+    text-align: center;
+}
+.button{
+    @extend %button_tam;
+}
+.seccion{
+    @include flex-row-center;
+    @extend %padding_border;
+    background-color: $rojo;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.cat-bottom{
+        @include flex-colum-around;
+        align-items: center;
+        padding: 17px;
+}
+.cat{
+    @extend %size;
+    border-radius: 5px;
+    transition: 2s;
+}
+.cat:hover{
+    transform: scale(0.93);
+    transition: 1s;
+}
+.preview-Rop div img{
+    height: 110%;
+    width: 100%;
+}
+.ropa-top{
+    @include flex-row-center;
+}
+.ropa-top div img{
+    @extend %size;
+}
+.ropa1{
+    @extend %size;
+    object-fit: cover;
+    padding: 2rem;
+    border-radius: 35px;
+}
+
+/* Nosotros */
+.nosgrid{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nosotros"
+    "footer";
+    grid-column: auto;
+    grid-row: auto;
+}
+header{
+    grid-area: header;
+}
+.cont-nos{
+    grid-area: nosotros;
+}
+footer{
+    grid-area: footer;
+}
+.cont-nos{
+    @include flex-between-center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    .nos-1{
+        @include flex-row-center;
+        background-color: $rojo;
+        padding: 3rem;
+        border-radius: 15px;
+        align-items: center;
+    }
+    .nos-2{
+        padding: 100px;
+        background-color: $blanco;
+        border-radius: 25px;
+    }
+}
+
+/*Mayorista*/
+.may-tit{
+    background-color: $blanco;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    h1{
+        color: $negro;
+    }
+}
+.may-exp{
+    text-align: center;
+    color: $blanco;
+    margin: 1rem;
+    padding: 2rem;
+}
+.infoymaps{
+    @include flex-row-center;
+}
+.info-maps{
+    background-color: $rojo;
+    text-align: center;
+    padding: 5rem;
+    border: 5px;
+}
+.info-maps h2{
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+iframe{
+    width: 800px;
+    height: 400px;
+    object-fit: cover
+}
+form{
+    @include flex-colum-center;
+    color: $blanco;
+    padding: 5rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    legend{
+        text-align: center;
+    }
+}
+input,
+  textarea {
+    @extend %padding_border;
+    margin: 5px;
+    background-color: $blanco;
+    text-align: center;
+}
+
+/*Catalogo */
+.cata{
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+    grid-gap: 60px 40px;
+    margin: 3rem;   
+    div{
+        img{
+            border-radius: 20px ;
+        }
+    }
+}
+.fts-rem{
+    @include flex-colum-center;
+}
+.remeras{
+    margin-top: 2rem
+}
+.rem-cat{
+    transition: 1s;
+}
+.rem-cat:hover{
+    transform: scale(1.20);
+    transition: 2.5s;
+}
+
+/*Faqs*/
+.faqs{
+    display: grid;
+    grid-template-areas: "cont1 cont2 cont3 cont4";
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4, 16rem);
+    justify-content: center;
+    margin-top:7rem;
+    margin-bottom: 1rem;
+    grid-gap: 55px 30px;
+}
+.contenedor-faqs-1{
+    grid-area: cont1;
+}
+.contenedor-faqs-2{
+    grid-area: cont2; 
+}
+.contenedor-faqs-3{
+    grid-area: cont3;
+
+}
+.contenedor-faqs-4{
+    grid-area: cont4;   
+}
+.contenedor-faqs-1,.contenedor-faqs-2,.contenedor-faqs-3,.contenedor-faqs-4{
+    text-align: center;
+    @include faqs-cont;
+    transition: 1s;
+    align-items: center;
+    border-radius: 10px;
+}
+.contenedor-faqs-1:hover,.contenedor-faqs-2:hover,.contenedor-faqs-3:hover,.contenedor-faqs-4:hover{
+    transform: scale(1.1);
+    transition: 3s;
+}
+.respuesta{
+    margin-bottom: auto;
+}

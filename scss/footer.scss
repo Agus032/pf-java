@@ -1,0 +1,15 @@
+@import"../scss/variable";
+
+footer{
+    background-color: $rojo;
+    position: relative;
+    .redes{
+        @include flex-row-jend}
+        a{
+            img{
+                width: 35px;
+                padding: 5px;
+            }
+        }
+}
+

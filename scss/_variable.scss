@@ -1,0 +1,51 @@
+// variables
+
+$negro: #333333;
+$blanco: #f4f4f4;
+$rojo: #981914;
+$rojo-tra: rgba(152, 24, 20, 0.6);
+$blanco-tra: rgba(232, 232, 231, 0.91);
+$gris-humo: rgba(244, 244, 244, 0.5);
+
+// mixin
+
+@mixin flex-row-jend{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+@mixin flex-row-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@mixin flex-row-around{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@mixin flex-between-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-colum-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@mixin flex-colum-around{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around
+}
+
+@mixin faqs-cont{
+    background-color: $rojo;
+    padding: 2rem;
+}
