@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!--CDN sweet alert -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- link de boostrap -->
@@ -15,34 +16,25 @@
     <!-- link css -->
     <link rel="stylesheet" href="../css/main.css">
     <title>Nosotros</title>
-    
+
 </head>
-<meta name="description" content="Descubre quiénes somos. En nuestro apartado de 'Nosotros', te ofrecemos información detallada sobre nuestra empresa, sus valores, misión y visión.">
+<meta name="description"
+    content="Descubre quiénes somos. En nuestro apartado de 'Nosotros', te ofrecemos información detallada sobre nuestra empresa, sus valores, misión y visión.">
 <meta name="keywords" content="nosotros, empresa, historia, valores, visión, experiencia, calidad, productos">
 
 
 <body class="nosgrid">
     <header class="container-fluid mx-auto">
         <!--Menu de navegacion-->
-        <nav class="navbar navbar-expand-lg fixed-top"
-        style="background-color: rgba(232, 232, 231, 0.91);">
+        <nav class="navbar navbar-expand-lg fixed-top" style="background-color: rgba(232, 232, 231, 0.91);">
 
-            <a 
-            href="../index.html"
-            class="navbar-brand mb-0 h1 fs-6">
-            <img src="../img/Copia-santana.png" width="60" height="60">
-            Inicio
+            <a href="../index.html" class="navbar-brand mb-0 h1 fs-6">
+                <img src="../img/Copia-santana.png" width="60" height="60">
+                Inicio
             </a>
-            <button
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            class="navbar-toggler"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            >
-            <span class="navbar-toggler-icon"></span>
+            <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse " id="navbarNav">
@@ -52,16 +44,19 @@
                         <a href="../pages/santanamayo.html" class="nav-link">Santana Mayorista</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="../pages/catalogo.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Catalogo
+                        <a class="nav-link dropdown-toggle" href="../pages/catalogo.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Catalogo
                         </a>
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="../pages/catalogo.html">Remeras</a></li>
-                          <li><a class="dropdown-item" href="#">Buzos oversidez</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Tops</a></li>
+                            <li><a class="dropdown-item" href="../pages/catalogo.html">Remeras</a></li>
+                            <li><a class="dropdown-item" href="#">Buzos oversidez</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Tops</a></li>
                         </ul>
-                      </li>
+                    </li>
                     <li class="nav-item active">
                         <a href="../pages/faqs.html" class="nav-link">Faqs</a>
                     </li>
@@ -86,34 +81,34 @@
                     <h1 class="modal-title fs-5" id="exampleModalLabel">Carrito</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body carrito"  id="contenedor_carrito carrito">
+                <div class="modal-body carrito" id="contenedor_carrito carrito">
                     <!-- inicio de codigo cop -->
                     <div class="carrito-items">
                         <div class="carrito-item">
-                            <img src="img/boxengasse.png" width="80px" alt="">
+                            <img src="./img/remera1.webp width="80px alt="">
                             <div class="carrito-item-detalles">
-                                <span class="carrito-item-titulo">Box Engasse</span>
+                                <span class="carrito-item-titulo">Remera</span>
                                 <div class="selector-cantidad">
                                     <i class="fa-solid fa-minus restar-cantidad"></i>
                                     <input type="text" value="1" class="carrito-item-cantidad" disabled>
                                     <i class="fa-solid fa-plus sumar-cantidad"></i>
                                 </div>
-                                <span class="carrito-item-precio">$15.000,00</span>
+                                <span class="carrito-item-precio">$4.000,00</span>
                             </div>
                             <span class="btn-eliminar">
                                 <i class="fa-solid fa-trash"></i>
                             </span>
                         </div>
                         <div class="carrito-item">
-                            <img src="img/skinglam.png" width="80px" alt="">
+                            <img src="./img/remera2.jpg width="80px alt="">
                             <div class="carrito-item-detalles">
-                                <span class="carrito-item-titulo">Skin Glam</span>
+                                <span class="carrito-item-titulo">Remera Overzide</span>
                                 <div class="selector-cantidad">
                                     <i class="fa-solid fa-minus restar-cantidad"></i>
                                     <input type="text" value="3" class="carrito-item-cantidad" disabled>
                                     <i class="fa-solid fa-plus sumar-cantidad"></i>
                                 </div>
-                                <span class="carrito-item-precio">$18.000,00</span>
+                                <span class="carrito-item-precio">$5.000,00 </span>
                             </div>
                             <button class="btn-eliminar">
                                 <i class="fa-solid fa-trash"></i>
@@ -128,10 +123,11 @@
                         <div class="fila">
                             <strong>Tu Total</strong>
                             <span class="carrito-precio-total">
-                                $120.000,00
+                                $9.000,00
                             </span>
                         </div>
-                        <button class="btn-pagar btn btn-danger">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+                        <button class="btn-pagar btn btn-danger">Pagar <i class="fa-solid fa-bag-shopping"></i>
+                        </button>
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir
                             comprando</button>
                     </div>
@@ -142,19 +138,27 @@
 
     <!-- el contenido principal del la pagina -->
 
-    <section class="cont-nos" >
-        
+    <section class="cont-nos">
+
         <div class="nos-1">
             <h1>Nosotros</h1>
         </div>
-        
+
         <div class="nos-2">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt error, distinctio autem saepe consequuntur animi, maiores omnis placeat quas atque soluta repudiandae reiciendis. Incidunt odit pariatur itaque optio natus magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem officiis, illum vel, corrupti reprehenderit obcaecati illo quis natus quam in similique. Et illo enim aliquam odit, magni nam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae deserunt eos cupiditate ducimus temporibus sunt maiores repellendus, quidem corporis fuga. A qui, nihil fugiat odit doloribus perferendis corrupti asperiores ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quibusdam fugit eligendi perferendis a, nesciunt numquam repellendus magnam natus! Repellat hic consequatur a laboriosam voluptas beatae molestiae voluptatum sed repudiandae? Eligendi, dolor?</p>  
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt error, distinctio autem saepe consequuntur
+                animi, maiores omnis placeat quas atque soluta repudiandae reiciendis. Incidunt odit pariatur itaque
+                optio natus magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem officiis, illum vel,
+                corrupti reprehenderit obcaecati illo quis natus quam in similique. Et illo enim aliquam odit, magni
+                nam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae deserunt eos cupiditate ducimus
+                temporibus sunt maiores repellendus, quidem corporis fuga. A qui, nihil fugiat odit doloribus
+                perferendis corrupti asperiores ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                quibusdam fugit eligendi perferendis a, nesciunt numquam repellendus magnam natus! Repellat hic
+                consequatur a laboriosam voluptas beatae molestiae voluptatum sed repudiandae? Eligendi, dolor?</p>
         </div>
-        
+
     </section>
 
-<!-- footer de las paginas -->
+    <!-- footer de las paginas -->
     <footer>
         <div class="redes">
             <a href="#">
@@ -165,6 +169,11 @@
             </a>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <!-- CDN DE JS -->
+    <script src="../app.js"></script>
 </body>
+
 </html>
